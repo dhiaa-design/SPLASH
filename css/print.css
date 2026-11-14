@@ -1,0 +1,90 @@
+/* Print CSS untuk Lembar Kerja Peserta Didik (LKPD) & Laporan Rekap Guru */
+
+@media print {
+  /* Sembunyikan elemen navigasi, header app, footer, tombol cetak, dan elemen interaktif */
+  .app-header,
+  .app-sidebar,
+  .sidebar-backdrop,
+  .app-footer,
+  .btn-print-hide,
+  .btn,
+  .blocks-toolbox,
+  .balance-operations-panel,
+  #toast-container,
+  .modal-overlay {
+    display: none !important;
+  }
+
+  body, .main-wrapper, .content-container {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    font-size: 11pt !important;
+  }
+
+  .card {
+    border: 1px solid #CCCCCC !important;
+    box-shadow: none !important;
+    margin-bottom: 1.5rem !important;
+    break-inside: avoid;
+    border-radius: 6px !important;
+    padding: 1rem !important;
+  }
+
+  .print-header {
+    display: block !important;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .print-header h1 {
+    font-size: 16pt;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+
+  .print-header p {
+    font-size: 10pt;
+    color: #333333;
+    margin: 0;
+  }
+
+  .table-custom {
+    border: 1px solid #000000 !important;
+    width: 100% !important;
+  }
+
+  .table-custom th, .table-custom td {
+    border: 1px solid #333333 !important;
+    color: #000000 !important;
+    padding: 6px 10px !important;
+  }
+
+  .table-custom th {
+    background-color: #EEEEEE !important;
+  }
+
+  .print-signature-section {
+    display: flex !important;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 0 2rem;
+    break-inside: avoid;
+  }
+
+  .signature-box {
+    text-align: center;
+    width: 200px;
+  }
+
+  .signature-line {
+    margin-top: 4rem;
+    border-top: 1px solid #000000;
+    padding-top: 4px;
+    font-weight: bold;
+  }
+}

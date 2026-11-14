@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="milkBoxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E1BEE7"/>
+      <stop offset="100%" stop-color="#8E24AA"/>
+    </linearGradient>
+    <linearGradient id="milkFrontGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5F5"/>
+      <stop offset="100%" stop-color="#E1BEE7"/>
+    </linearGradient>
+  </defs>
+  <!-- Atap Kotak Susu -->
+  <polygon points="30,32 50,18 70,32 50,38" fill="#BA68C8"/>
+  <polygon points="30,32 50,18 50,22 30,32" fill="#7B1FA2"/>
+  <polygon points="50,18 70,32 70,28 50,18" fill="#9C27B0"/>
+  <!-- Badan Kotak Susu -->
+  <rect x="30" y="32" width="40" height="50" rx="3" fill="url(#milkFrontGrad)" stroke="#7B1FA2" stroke-width="2"/>
+  <!-- Hiasan Tetes Susu Putih -->
+  <path d="M 30 50 Q 40 56 50 50 Q 60 44 70 50 L 70 82 L 30 82 Z" fill="#8E24AA" opacity="0.9"/>
+  <!-- Sedotan Kecil Lucu -->
+  <path d="M 52 18 L 56 8 L 64 6" stroke="#FF5252" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Label y -->
+  <circle cx="50" cy="66" r="13" fill="#AB47BC" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="50" y="71" font-family="'Nunito', sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">y</text>
+</svg>

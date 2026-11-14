@@ -1,0 +1,272 @@
+/* Styling Timbangan Interaktif & Balok Aljabar SPLASH */
+
+.balance-stage-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Kartu Timbangan */
+.balance-card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--color-primary-border);
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.balance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.balance-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.balance-eq-tag {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: var(--font-family-math);
+}
+
+/* Status Kesetaraan Timbangan */
+.balance-status-banner {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  transition: all var(--transition-normal);
+}
+
+.balance-status-banner.balanced {
+  background: var(--color-success-light);
+  color: #14532d;
+  border: 1px solid #86EFAC;
+}
+
+.balance-status-banner.unbalanced {
+  background: var(--color-danger-light);
+  color: #7f1d1d;
+  border: 1px solid #FCA5A5;
+}
+
+/* Area Timbangan SVG & Visual */
+.balance-viewport {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 280px;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.balance-svg-canvas {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Lengan Timbangan & Rotasi */
+.balance-beam-group {
+  transform-origin: 300px 70px;
+  transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Wadah Cawan (Dropzones) */
+.tray-dropzone {
+  position: absolute;
+  width: 170px;
+  min-height: 110px;
+  border-radius: var(--radius-md);
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  gap: 6px;
+  border: 2px dashed rgba(30, 111, 217, 0.4);
+  background: rgba(220, 235, 255, 0.35);
+  transition: all var(--transition-fast);
+  z-index: 10;
+}
+
+.tray-dropzone.left {
+  left: 35px;
+  bottom: 30px;
+}
+
+.tray-dropzone.right {
+  right: 35px;
+  bottom: 30px;
+}
+
+.tray-dropzone.drag-hover {
+  background: rgba(46, 158, 107, 0.2);
+  border-color: var(--color-success);
+  transform: scale(1.03);
+}
+
+/* Balok Aljabar Interaktif */
+.algebra-block {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+  position: relative;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.algebra-block:active {
+  cursor: grabbing;
+}
+
+.algebra-block.is-dragging {
+  opacity: 0.85;
+  box-shadow: var(--shadow-lg);
+  transform: scale(1.15) !important;
+  z-index: 999;
+}
+
+/* Tipe Balok */
+.block-x {
+  background: linear-gradient(135deg, #FF9100 0%, #E65100 100%);
+  border: 2px solid #BF360C;
+  width: 44px;
+  height: 44px;
+  font-size: 1.1rem;
+}
+
+.block-y {
+  background: linear-gradient(135deg, #AB47BC 0%, #7B1FA2 100%);
+  border: 2px solid #4A148C;
+  width: 44px;
+  height: 44px;
+  font-size: 1.1rem;
+}
+
+.block-num {
+  background: linear-gradient(135deg, #29B6F6 0%, #0288D1 100%);
+  border: 2px solid #01579B;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 6px;
+  font-size: 0.95rem;
+}
+
+/* Palet Balok Tersedia (Toolbox) */
+.blocks-toolbox {
+  background: var(--color-primary-lighter);
+  border: 1px solid var(--color-primary-border);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.toolbox-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.toolbox-blocks-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toolbox-block-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.toolbox-block-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* Panel Operasi Ruas (Kedua Ruas) */
+.balance-operations-panel {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.operations-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.operations-buttons-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Peringatan Kesetaraan Ruas */
+.balance-warning-alert {
+  background: var(--color-accent-yellow-light);
+  border-left: 4px solid var(--color-accent-yellow);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: #713f12;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* Animasi Eliminasi Suku */
+@keyframes eliminateFadeOut {
+  0% { transform: scale(1); opacity: 1; filter: drop-shadow(0 0 6px #FFC83D); }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(0.2); opacity: 0; }
+}
+
+.block-eliminating {
+  animation: eliminateFadeOut 500ms forwards ease-out;
+}
