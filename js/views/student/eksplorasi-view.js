@@ -57,7 +57,7 @@ export function renderEksplorasiView(container) {
             </button>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.75rem;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1.25rem;">
             
             <!-- Kontrol Variabel x -->
             <div style="background: #FFF3E0; padding: 1.25rem; border-radius: var(--radius-md); border: 1.5px solid #FFE0B2;">
@@ -96,8 +96,8 @@ export function renderEksplorasiView(container) {
           </div>
         </div>
 
-        <!-- Kartu Evaluasi Kedua Persamaan Secara Simultan -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        <!-- Kartu Evaluasi Kedua Persamaan Secara Simultan (Responsif) -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1.25rem;">
           
           <!-- Evaluasi Persamaan 1 -->
           <div class="card ${res1.isSatisfied ? 'card-accent-blue' : ''}" style="border: 2px solid ${res1.isSatisfied ? 'var(--color-success)' : 'var(--color-border)'};">

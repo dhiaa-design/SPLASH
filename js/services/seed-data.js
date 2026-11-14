@@ -86,33 +86,38 @@ INITIAL_MISSIONS[4].story = 'Panitia pensi SMP menjual tiket: 5 tiket anak-anak 
 export const INITIAL_QUIZ_QUESTIONS = [
   {
     id: 'q1',
-    question: 'Manakah di bawah ini yang merupakan Persamaan Linear Dua Variabel (PLDV)?',
+    question: 'Dari persamaan 4x + 3y = 18, apakah pasangan berurutan (3, 2) merupakan penyelesaian persamaan tersebut?',
     options: [
-      '2x + 5 = 15',
-      '3x + 2y = 12',
-      'x² + y = 16',
-      '2x + 3y + z = 10'
+      'Ya, karena 4(3) + 3(2) = 12 + 6 = 18 (benar)',
+      'Tidak, karena hasilnya bukan 18',
+      'Tidak bisa ditentukan',
+      'Hanya berlaku jika x = 0'
     ],
-    correctAnswer: 1,
-    explanation: '3x + 2y = 12 memiliki dua variabel (x dan y) dan masing-masing berpangkat satu (derajat 1).'
+    correctAnswer: 0,
+    explanation: 'Substitusikan x = 3 dan y = 2: 4(3) + 3(2) = 12 + 6 = 18, sehingga (3, 2) memenuhi persamaan.'
   },
   {
     id: 'q2',
-    question: 'Apa arti bahwa pasangan (x, y) adalah penyelesaian dari SPLDV?',
+    question: 'Berapakah penyelesaian dari SPLDV: x + y = 11 dan 2x + y = 17?',
     options: [
-      'Nilai x dan y hanya memenuhi salah satu persamaan saja.',
-      'Nilai x dan y harus memenuhi kedua persamaan secara bersama-sama.',
-      'Nilai x harus sama dengan nilai y.',
-      'Nilai x dan y selalu bernilai 0.'
+      '(x, y) = (4, 7)',
+      '(x, y) = (6, 5)',
+      '(x, y) = (5, 6)',
+      '(x, y) = (7, 4)'
     ],
     correctAnswer: 1,
-    explanation: 'Penyelesaian SPLDV adalah nilai variabel yang membuat KEDUA persamaan bernilai benar secara serentak/simultan.'
+    explanation: 'Kurangkan kedua persamaan: (2x - x) + (y - y) = 17 - 11 ⟹ x = 6. Substitusikan ke x + y = 11 ⟹ y = 5. Jadi, (x, y) = (6, 5).'
   },
   {
     id: 'q3',
-    question: 'Jika 2x + y = 11 dan nilai x = 3, berapakah nilai y?',
-    options: ['3', '4', '5', '6'],
-    correctAnswer: 2,
-    explanation: 'Substitusikan x = 3 ke persamaan: 2(3) + y = 11 => 6 + y = 11 => y = 11 - 6 = 5.'
+    question: 'Harga 2 tiket dewasa dan 1 tiket anak Rp55.000,00, sedangkan 1 tiket dewasa dan 2 tiket anak Rp50.000,00. Berapa harga 1 tiket dewasa (d) dan 1 tiket anak (a)?',
+    options: [
+      'Dewasa Rp25.000 dan Anak Rp10.000',
+      'Dewasa Rp20.000 dan Anak Rp15.000',
+      'Dewasa Rp30.000 dan Anak Rp12.500',
+      'Dewasa Rp15.000 dan Anak Rp20.000'
+    ],
+    correctAnswer: 1,
+    explanation: 'Model: 2d + a = 55 dan d + 2a = 50. Diperoleh d = 20 (Rp20.000) dan a = 15 (Rp15.000).'
   }
 ];

@@ -12,51 +12,51 @@ export function renderAuthView(container) {
 
   function render() {
     container.innerHTML = `
-      <div style="min-height: calc(100vh - var(--header-height)); display: flex; align-items: center; justify-content: center; padding: 2rem 1rem;">
-        <div class="card" style="max-width: 960px; width: 100%; padding: 0; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); box-shadow: var(--shadow-lg);">
+      <div style="min-height: calc(100vh - var(--header-height)); display: flex; align-items: center; justify-content: center; padding: 1.5rem 0.75rem;">
+        <div class="card auth-card">
           
           <!-- Panel Kiri: Branding SPLASH & Ilustrasi Edukatif -->
-          <div style="background: linear-gradient(145deg, #0B3D91 0%, #1E6FD9 100%); color: white; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="auth-panel-left">
             <div>
-              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
-                <img src="assets/images/logo.svg" alt="Logo SPLASH" style="width: 58px; height: 58px;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+                <img src="assets/images/logo.svg" alt="Logo SPLASH" style="width: 52px; height: 52px; flex-shrink: 0;">
                 <div>
-                  <h1 style="color: white; font-size: 1.8rem; font-weight: 800; line-height: 1.1;">SPLASH</h1>
-                  <span style="color: var(--color-primary-light); font-size: 0.85rem; font-weight: 600;">Media Pembelajaran Matematika SMP</span>
+                  <h1 style="color: white; font-size: 1.7rem; font-weight: 800; line-height: 1.1;">SPLASH</h1>
+                  <span style="color: var(--color-primary-light); font-size: 0.82rem; font-weight: 600;">Media Pembelajaran Matematika SMP</span>
                 </div>
               </div>
-              <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.05rem; line-height: 1.5; margin-bottom: 1.5rem;">
+              <p style="color: rgba(255, 255, 255, 0.9); font-size: 1rem; line-height: 1.5; margin-bottom: 1.25rem;">
                 <strong>Sistem Persamaan Linear Asyik dan Seru</strong><br>
                 Eksplorasi kesetaraan aljabar dua variabel melalui simulasi timbangan interaktif, laboratorium eliminasi, dan petualangan misi kontekstual!
               </p>
               
               <!-- Info Fitur Unggulan -->
-              <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
-                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                  <span style="background: rgba(255,255,255,0.2); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">⚖️</span>
+              <div style="display: flex; flex-direction: column; gap: 0.65rem; margin-top: 0.75rem;">
+                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.88rem;">
+                  <span style="background: rgba(255,255,255,0.2); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">⚖️</span>
                   <span>Simulasi Timbangan SVG Interaktif</span>
                 </div>
-                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                  <span style="background: rgba(255,255,255,0.2); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">🔍</span>
+                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.88rem;">
+                  <span style="background: rgba(255,255,255,0.2); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">🔍</span>
                   <span>Eksplorasi Nilai Variabel & LKPD Digital</span>
                 </div>
-                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                  <span style="background: rgba(255,255,255,0.2); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">📊</span>
+                <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.88rem;">
+                  <span style="background: rgba(255,255,255,0.2); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">📊</span>
                   <span>Dashboard Fasilitasi & Analitik Guru</span>
                 </div>
               </div>
             </div>
 
             <!-- Petunjuk Masuk -->
-            <div style="background: rgba(0, 0, 0, 0.2); border-radius: var(--radius-md); padding: 1rem; margin-top: 2rem; font-size: 0.85rem;">
-              <div style="font-weight: 700; color: var(--color-accent-yellow); margin-bottom: 0.35rem;">💡 Cara Masuk:</div>
+            <div style="background: rgba(0, 0, 0, 0.2); border-radius: var(--radius-md); padding: 0.85rem 1rem; margin-top: 1.5rem; font-size: 0.82rem;">
+              <div style="font-weight: 700; color: var(--color-accent-yellow); margin-bottom: 0.25rem;">💡 Cara Masuk:</div>
               <div>• <strong>Siswa:</strong> Cukup masukkan Nama dan Kelas (tanpa kata sandi).</div>
               <div>• <strong>Guru:</strong> Masuk dengan <code>guru</code> / <code>guru123</code>.</div>
             </div>
           </div>
 
           <!-- Panel Kanan: Form Masuk -->
-          <div style="padding: 2.5rem; background: var(--color-white); display: flex; flex-direction: column; justify-content: center;">
+          <div class="auth-panel-right">
             
             <!-- Tab Pilihan Peran: Siswa vs Guru -->
             <div style="display: flex; background: var(--color-primary-lighter); padding: 4px; border-radius: var(--radius-md); margin-bottom: 1.5rem;">

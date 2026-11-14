@@ -227,7 +227,19 @@
   display: none;
 }
 
-/* Responsive Breakpoints */
+/* Responsive Breakpoints Lengkap (Handphone, Tablet, Laptop) */
+
+/* Laptop & Layar Besar (>= 992px) */
+@media (min-width: 992px) {
+  .hamburger-btn {
+    display: none;
+  }
+  .content-container {
+    padding: 2rem 2.5rem;
+  }
+}
+
+/* Tablet & Perangkat Sedang (600px - 991px) */
 @media (max-width: 991px) {
   .app-sidebar {
     position: fixed;
@@ -250,10 +262,64 @@
     backdrop-filter: blur(2px);
     z-index: 85;
   }
+
+  .content-container {
+    padding: 1.25rem 1.5rem;
+  }
 }
 
-@media (min-width: 992px) {
-  .hamburger-btn {
-    display: none;
+/* Handphone & Layar Kecil (< 600px) */
+@media (max-width: 599px) {
+  :root {
+    --header-height: 60px;
+  }
+
+  .app-header {
+    padding: 0 0.75rem;
+  }
+
+  .header-left {
+    gap: 0.5rem;
+  }
+
+  .brand-logo-svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand-title {
+    font-size: 1.15rem;
+  }
+
+  .header-right {
+    gap: 0.4rem;
+  }
+
+  #header-user-profile {
+    max-width: 110px;
+  }
+
+  #header-user-name {
+    font-size: 0.82rem;
+    max-width: 70px;
+  }
+
+  .badge-role-siswa, .badge-role-guru {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  #btn-header-help, #btn-header-logout {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .content-container {
+    padding: 0.75rem;
+  }
+
+  .app-footer {
+    padding: 1rem 0.75rem;
+    font-size: 0.78rem;
   }
 }

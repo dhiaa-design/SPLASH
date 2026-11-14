@@ -89,8 +89,8 @@ export function renderSimulasiView(container) {
           </div>
         </div>
 
-        <!-- Dua Timbangan SVG Berdampingan (Grid) -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 1.5rem;">
+        <!-- Dua Timbangan SVG Berdampingan (Grid Responsif HP/Tablet/Laptop) -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 1.25rem;">
           
           <!-- Timbangan 1: 2x + y = 11 -->
           <div>

@@ -76,6 +76,14 @@ export function renderTentangView(container) {
 
       </div>
 
+      <!-- Referensi Buku Ajar -->
+      <div class="card" style="background: #F8FAFC; border: 1px solid var(--color-border); font-size: 0.9rem; color: var(--color-text-muted);">
+        <strong style="color: var(--color-primary-dark); font-size: 0.95rem;">📚 Sumber Referensi Bahan Ajar:</strong>
+        <p style="margin: 0.35rem 0 0 0; line-height: 1.6;">
+          Kristanto, Y. D., Taqiyuddin, M., Yulfiana, E., & Rukmana, I. (2022). <em>Matematika untuk SMP/MTs Kelas IX</em>. Jakarta: Pusat Perbukuan, Badan Standar, Kurikulum, dan Asesmen Pendidikan, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi. Bab I: Sistem Persamaan Linear Dua Variabel (hlm. 2–32).
+        </p>
+      </div>
+
     </div>
   `;
 }
