@@ -40,7 +40,7 @@ export function renderEliminasiView(container) {
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
           <div class="card card-accent-blue" style="border: 2px solid var(--color-primary-border);">
             <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.25rem;">
-              Persamaan (1) – Kantin Andi:
+              Persamaan (1) – Paket Pembelian 1:
             </div>
             <div style="font-size: 1.5rem; font-family: var(--font-family-math); font-weight: 700; color: var(--color-primary-dark);">
               2x + y = 11
@@ -52,7 +52,7 @@ export function renderEliminasiView(container) {
 
           <div class="card card-accent-blue" style="border: 2px solid var(--color-primary-border);">
             <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.25rem;">
-              Persamaan (2) – Kantin Citra:
+              Persamaan (2) – Paket Pembelian 2:
             </div>
             <div style="font-size: 1.5rem; font-family: var(--font-family-math); font-weight: 700; color: var(--color-primary-dark);">
               x + 2y = 13

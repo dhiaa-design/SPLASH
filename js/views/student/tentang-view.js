@@ -23,7 +23,7 @@ export function renderTentangView(container) {
       <div class="card card-accent-blue" style="border: 2px solid var(--color-primary-border); padding: 1.75rem;">
         <h2 style="font-size: 1.3rem; color: var(--color-primary-dark); margin-bottom: 0.5rem;">Tentang Media SPLASH</h2>
         <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 0;">
-          <strong>SPLASH</strong> adalah media pembelajaran interaktif berbasis web yang dirancang khusus untuk memfasilitasi pemahaman konsep <strong>Sistem Persamaan Linear Dua Variabel (SPLDV)</strong> bagi peserta didik kelas VIII SMP. Dengan mengombinasikan representasi visual konkret (timbangan dua lengan dan balok aljabar), pemodelan kontekstual kantin sekolah, serta eksplorasi simultan, SPLASH menjembatani pemikiran konkret menuju abstraksi aljabar secara menyenangkan dan bermakna.
+          <strong>SPLASH</strong> adalah media pembelajaran interaktif berbasis web yang dirancang khusus untuk memfasilitasi pemahaman konsep <strong>Sistem Persamaan Linear Dua Variabel (SPLDV)</strong> bagi peserta didik kelas VIII dan IX SMP. Dengan mengombinasikan representasi visual konkret (timbangan dua lengan dan balok aljabar), pemodelan masalah kontekstual kehidupan nyata, serta eksplorasi simultan, SPLASH menjembatani pemikiran konkret menuju abstraksi aljabar secara menyenangkan dan bermakna.
         </p>
       </div>
 

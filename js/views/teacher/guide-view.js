@@ -39,7 +39,7 @@ export function renderTeacherGuideView(container) {
           <div style="background: #F8FAFC; border-left: 4px solid #1E6FD9; padding: 1rem; border-radius: var(--radius-sm);">
             <strong>1. Apersepsi & Orientasi Masalah (15 Menit):</strong>
             <p style="margin: 0.25rem 0 0 0; font-size: 0.92rem;">
-              Buka menu <em>Masalah Kontekstual</em>. Tampilkan skenario kantin sekolah (roti dan susu). Diskusikan mengapa kita memerlukan dua persamaan untuk mencari dua harga yang belum diketahui.
+              Buka menu <em>Masalah Kontekstual</em>. Tampilkan skenario kontekstual alat tulis (pensil dan buku tulis). Diskusikan mengapa kita memerlukan dua persamaan untuk mencari dua harga yang belum diketahui.
             </p>
           </div>
 

@@ -12,8 +12,8 @@ export const INITIAL_CLASS = {
 export const INITIAL_MISSIONS = [
   {
     id: 'misi-1',
-    title: 'Misi Kantin Sekolah: Roti & Susu',
-    story: 'Di kantin SMP Merdeka, 2 potong roti manis dan 1 kotak susu dihargai Rp11.000. Sementara itu, 1 potong roti manis dan 2 kotak susu dihargai Rp13.000. Tentukan harga 1 roti (x) dan 1 susu (y) dalam ribuan rupiah!',
+    title: 'Misi Kontekstual 1: Roti & Susu',
+    story: 'Pada paket belanja sarapan, 2 potong roti manis dan 1 kotak susu dihargai Rp11.000. Sementara itu, 1 potong roti manis dan 2 kotak susu dihargai Rp13.000. Tentukan harga 1 roti (x) dan 1 susu (y) dalam ribuan rupiah!',
     difficulty: 'mudah',
     eq1: '2x + y = 11',
     eq2: 'x + 2y = 13',
