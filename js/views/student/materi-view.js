@@ -562,6 +562,11 @@ export function renderMateriView(container) {
                 Diperoleh x = 2 dan y = 4. Artinya: Harga 1 pensil adalah Rp2.000,00 dan harga 1 buku tulis adalah Rp4.000,00.
               </div>
             </div>
+            <div style="margin-top: 1rem; text-align: right;">
+              <a href="#/kontekstual" class="btn btn-sm btn-primary" style="font-weight: 700;">
+                ✏️ Coba Praktik Pemodelan di Menu Masalah Kontekstual →
+              </a>
+            </div>
           </div>
 
           <!-- Kesalahan yang Perlu Dihindari -->
@@ -720,7 +725,7 @@ export function renderMateriView(container) {
         <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem;">
           <a href="#/beranda" class="btn btn-outline">← Beranda</a>
           <a href="#/kontekstual" class="btn btn-success btn-lg" id="btn-next-stage">
-            Lanjut ke Masalah Kontekstual 🥪 →
+            Lanjut ke Masalah Kontekstual ✏️ →
           </a>
         </div>
 

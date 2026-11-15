@@ -84,12 +84,12 @@ export function renderHomeView(container) {
           <!-- Tahap 2: Kontekstual -->
           <a href="#/kontekstual" class="card card-hover" style="border-top: 4px solid #FF7A00; display: flex; flex-direction: column;">
             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.8rem;">🥪</span>
+              <span style="font-size: 1.8rem;">✏️</span>
               ${stages.includes('kontekstual') ? '<span class="badge badge-success">✓ Selesai</span>' : '<span class="badge badge-info">Tahap 2</span>'}
             </div>
             <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">2. Masalah Kontekstual</h3>
-            <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Pecahkan misteri harga roti dan susu di kantin sekolah dengan merumuskan model aljabar dua variabel.</p>
-            <span style="font-weight: 700; color: #FF7A00; font-size: 0.82rem;">Buka Masalah Kantin →</span>
+            <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Pecahkan persoalan harga pensil dan buku tulis dengan merumuskan model aljabar dua variabel.</p>
+            <span style="font-weight: 700; color: #FF7A00; font-size: 0.82rem;">Buka Masalah Kontekstual →</span>
           </a>
 
           <!-- Tahap 3: Simulasi Timbangan -->

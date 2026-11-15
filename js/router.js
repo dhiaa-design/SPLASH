@@ -34,7 +34,7 @@ const routes = {
   // Rute Pembelajaran Siswa
   '#/beranda': { view: renderHomeView, authRequired: true, studentOnly: false, title: 'Beranda Pembelajaran' },
   '#/materi': { view: renderMateriView, authRequired: true, studentOnly: false, title: 'Materi SPLDV' },
-  '#/kontekstual': { view: renderKontekstualView, authRequired: true, studentOnly: false, title: 'Masalah Kontekstual Kantin' },
+  '#/kontekstual': { view: renderKontekstualView, authRequired: true, studentOnly: false, title: 'Masalah Kontekstual' },
   '#/simulasi': { view: renderSimulasiView, authRequired: true, studentOnly: false, title: 'Simulasi Dua Timbangan' },
   '#/eksplorasi': { view: renderEksplorasiView, authRequired: true, studentOnly: false, title: 'Eksplorasi Nilai Variabel' },
   '#/eliminasi': { view: renderEliminasiView, authRequired: true, studentOnly: false, title: 'Laboratorium Eliminasi' },

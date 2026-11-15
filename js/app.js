@@ -35,13 +35,13 @@ class App {
         `
       },
       '#/kontekstual': {
-        title: 'Masalah Kontekstual Kantin',
+        title: 'Masalah Kontekstual',
         html: `
-          <p>Bantu ibu kantin membuat model matematika aljabar:</p>
+          <p>Pelajari 5 langkah pemecahan masalah kontekstual:</p>
           <ul>
-            <li>Tentukan arti variabel x (roti) dan y (susu).</li>
-            <li>Ketik dua persamaan aljabar dari pesanan Andi dan Citra.</li>
-            <li>Sistem menerima urutan suku berbeda (contoh: <code>y + 2x = 11</code> dianggap sama dengan <code>2x + y = 11</code>).</li>
+            <li>Tentukan arti variabel x (harga 1 pensil) dan y (harga 1 buku tulis).</li>
+            <li>Ketik dua persamaan aljabar dari paket belanja alat tulis.</li>
+            <li>Sistem menerima urutan suku berbeda (contoh: <code>y + 2x = 8</code> dianggap sama dengan <code>2x + y = 8</code>).</li>
           </ul>
         `
       },
@@ -316,8 +316,8 @@ class App {
         </li>
         <li>
           <a href="#/kontekstual" class="nav-item-link ${currentHash === '#/kontekstual' ? 'active' : ''}">
-            <span class="nav-icon">🥪</span>
-            <span>2. Masalah Kantin</span>
+            <span class="nav-icon">✏️</span>
+            <span>2. Masalah Kontekstual</span>
             ${completed.includes('kontekstual') ? '<span class="nav-badge-done">✓</span>' : ''}
           </a>
         </li>
