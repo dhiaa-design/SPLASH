@@ -1,6 +1,6 @@
 /**
  * Kontekstual View: Membuat Model dan Menyelesaikan Masalah Kontekstual
- * Menggantikan masalah kantin lama dengan materi pemodelan kontekstual pensil & buku tulis.
+ * Materi pemodelan masalah kontekstual nyata: paket alat tulis pensil (x) & buku tulis (y).
  * Sumber: Bahan Ajar Resmi Matematika SMP/MTs (Kemendikbudristek).
  */
 
@@ -21,12 +21,15 @@ export function renderKontekstualView(container) {
           <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
             <a href="#/materi" style="font-weight: 600; font-size: 0.9rem;">← Bahan Ajar SPLDV</a>
             <span style="color: var(--color-text-light);">/</span>
-            <span style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">Masalah Kontekstual</span>
+            <span style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">Tahap 2: Masalah Kontekstual</span>
           </div>
-          <h1 style="font-size: 2rem; color: var(--color-primary-dark);">
+          <div class="badge badge-warning" style="margin-bottom: 0.5rem; font-size: 0.85rem; padding: 0.35rem 0.8rem; font-weight: 700;">
+            ✏️ TAHAP 2 PEMBELAJARAN
+          </div>
+          <h1 style="font-size: clamp(1.5rem, 3.5vw, 2.1rem); color: var(--color-primary-dark); font-weight: 800; line-height: 1.3;">
             Membuat Model dan Menyelesaikan Masalah Kontekstual
           </h1>
-          <p style="font-size: 1.05rem; margin-top: 0.5rem; color: var(--color-text-muted);">
+          <p style="font-size: 1.05rem; margin-top: 0.5rem; color: var(--color-text-muted); line-height: 1.6;">
             SPLDV sangat banyak digunakan untuk memecahkan permasalahan nyata sehari-hari, seperti perdagangan/belanja barang, tiket pertunjukan, dan kecepatan. Kuncinya adalah <strong>menerjemahkan informasi soal cerita menjadi dua persamaan linear</strong>.
           </p>
         </div>
@@ -153,25 +156,48 @@ export function renderKontekstualView(container) {
           </form>
         </div>
 
-        <!-- Banner Umpan Balik Sukses & Tafsiran Jawaban -->
-        <div id="success-banner" class="card card-accent-blue hidden" style="border: 2px solid var(--color-success); padding: 1.75rem;">
+        <!-- Banner Umpan Balik Sukses & Langkah Penyelesaian Lengkap -->
+        <div id="success-banner" class="card card-accent-blue hidden" style="border: 2px solid var(--color-success); padding: 1.75rem; background: linear-gradient(135deg, #F0FDF4 0%, #FFFFFF 100%);">
           <div style="display: flex; align-items: flex-start; gap: 1rem;">
             <div style="font-size: 2.8rem; line-height: 1;">🎉</div>
             <div style="flex: 1;">
-              <h2 style="color: var(--color-success); font-size: 1.4rem; margin-bottom: 0.35rem;">
+              <h2 style="color: var(--color-success); font-size: 1.35rem; margin-bottom: 0.35rem;">
                 Tepat Sekali! Model Matematika Berhasil Disusun
               </h2>
-              <p style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 0.75rem;">
-                Dua persamaan yang terbentuk adalah: <code>2x + y = 8</code> dan <code>x + 2y = 10</code>.
+              <p style="font-size: 0.95rem; color: var(--color-text-main); margin-bottom: 1rem;">
+                Dua persamaan linear yang terbentuk adalah: <code>2x + y = 8</code> dan <code>x + 2y = 10</code>.
               </p>
-              <div style="background: white; border-radius: var(--radius-sm); padding: 1rem; border-left: 4px solid var(--color-success); font-size: 0.95rem; margin-bottom: 1.25rem;">
-                <strong>Hasil Tafsiran Penyelesaian:</strong><br>
-                Dari penyelesaian sistem diperoleh <strong>x = 2</strong> dan <strong>y = 4</strong>.<br>
-                Artinya: Harga <strong>1 pensil adalah Rp2.000,00</strong> dan harga <strong>1 buku tulis adalah Rp4.000,00</strong>.
+
+              <!-- Uraian Langkah 3, 4, dan 5 Sesuai Panduan Kemendikbudristek -->
+              <div style="background: white; border-radius: var(--radius-md); padding: 1.25rem; border: 1.5px solid #BBF7D0; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                <div style="font-weight: 700; color: #166534; font-size: 1.05rem; border-bottom: 1px solid #DCFCE7; padding-bottom: 0.4rem;">
+                  Langkah 4 & 5: Penyelesaian dan Penafsiran Masalah
+                </div>
+                
+                <div style="font-size: 0.92rem; line-height: 1.6;">
+                  <strong>Penyelesaian SPLDV (Metode Campuran):</strong><br>
+                  1) Dari persamaan (1): <code>y = 8 - 2x</code><br>
+                  2) Substitusikan ke persamaan (2): <code>x + 2(8 - 2x) = 10 ⟹ x + 16 - 4x = 10 ⟹ -3x = -6 ⟹ x = 2</code><br>
+                  3) Cari nilai y: <code>y = 8 - 2(2) = 8 - 4 = 4</code>.<br>
+                  Diperoleh nilai <strong>x = 2</strong> dan <strong>y = 4</strong>.
+                </div>
+
+                <div style="background: #F0FDF4; padding: 0.75rem 1rem; border-radius: 6px; border-left: 4px solid var(--color-success); font-size: 0.92rem; line-height: 1.6;">
+                  <strong>Kesimpulan Kontekstual (Langkah 5):</strong><br>
+                  • Harga <strong>1 pensil</strong> adalah <strong>Rp2.000,00</strong>.<br>
+                  • Harga <strong>1 buku tulis</strong> adalah <strong>Rp4.000,00</strong>.<br>
+                  <span style="color: #15803D; font-size: 0.85rem;">✓ Uji periksa: 2(2.000) + 4.000 = Rp8.000 (Cocok!) dan 2.000 + 2(4.000) = Rp10.000 (Cocok!).</span>
+                </div>
               </div>
-              <a href="#/simulasi" class="btn btn-success btn-lg" id="btn-to-scale" style="box-shadow: 0 4px 15px rgba(46, 158, 107, 0.4);">
-                Buka Simulasi Timbangan ⚖️ →
-              </a>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+                <a href="#/simulasi" class="btn btn-success btn-lg" id="btn-to-scale" style="box-shadow: 0 4px 15px rgba(46, 158, 107, 0.4); font-weight: 700;">
+                  Lanjut ke Tahap 3: Simulasi Timbangan ⚖️ →
+                </a>
+                <a href="#/materi" class="btn btn-outline" style="font-size: 0.9rem;">
+                  ← Kembali ke Materi
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -526,68 +526,29 @@ export function renderMateriView(container) {
 
         </div>
 
-        <!-- BAGIAN 4: Membuat Model & Menyelesaikan Masalah Kontekstual -->
-        <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">
-              <span>🥪</span> 4. Membuat Model dan Menyelesaikan Masalah Kontekstual
-            </h2>
-          </div>
-          <p style="font-size: 1rem; line-height: 1.6;">
-            SPLDV sangat banyak digunakan untuk memecahkan permasalahan nyata sehari-hari, seperti perdagangan/belanja barang, tiket pertunjukan, dan kecepatan. Kuncinya adalah <strong>menerjemahkan informasi soal cerita menjadi dua persamaan linear</strong>.
-          </p>
-
-          <div style="background: #F8FAFC; border-radius: var(--radius-md); padding: 1.25rem; margin: 1rem 0; border: 1px solid var(--color-border);">
-            <h4 style="color: var(--color-primary-dark); margin-bottom: 0.5rem;">5 Langkah Pemecahan Masalah Kontekstual:</h4>
-            <ol style="padding-left: 1.25rem; font-size: 0.95rem; line-height: 1.7;">
-              <li><strong>Pahami Masalah:</strong> Tentukan informasi apa yang diketahui dan hal apa yang ditanyakan.</li>
-              <li><strong>Tentukan Variabel:</strong> Misalkan dua hal yang belum diketahui sebagai <em>x</em> dan <em>y</em>, serta tuliskan artinya dengan jelas (misal: x = harga 1 pensil dlm ribu rupiah).</li>
-              <li><strong>Susun Dua Persamaan:</strong> Buat dua persamaan aljabar berdasarkan dua kalimat transaksi pada soal.</li>
-              <li><strong>Selesaikan SPLDV:</strong> Gunakan salah satu metode (grafik, substitusi, eliminasi, atau campuran).</li>
-              <li><strong>Tafsirkan dan Periksa:</strong> Berikan kesimpulan akhir sesuai konteks nyata dan uji ke kedua persamaan.</li>
-            </ol>
-          </div>
-
-          <!-- Contoh Pemodelan Kontekstual Pensil & Buku -->
-          <div class="card card-accent-blue" style="border: 1.5px solid var(--color-primary-border); padding: 1.25rem;">
-            <div class="badge badge-warning" style="margin-bottom: 0.4rem;">Contoh Pemodelan:</div>
-            <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.5rem;">
-              "Dua pensil dan satu buku tulis berharga Rp8.000,00. Satu pensil dan dua buku tulis berharga Rp10.000,00. Tentukan harga masing-masing barang!"
-            </p>
-            <div style="background: white; border-radius: var(--radius-sm); padding: 1rem; font-size: 0.92rem; line-height: 1.6;">
-              <div>• Misalkan <strong>x</strong> = harga 1 pensil (ribu rupiah) dan <strong>y</strong> = harga 1 buku tulis (ribu rupiah).</div>
-              <div>• Persamaan I: <code>2x + y = 8</code></div>
-              <div>• Persamaan II: <code>x + 2y = 10</code></div>
-              <div style="margin-top: 0.5rem; font-weight: 700; color: var(--color-primary);">
-                Diperoleh x = 2 dan y = 4. Artinya: Harga 1 pensil adalah Rp2.000,00 dan harga 1 buku tulis adalah Rp4.000,00.
-              </div>
+        <!-- Transisi Menuju Masalah Kontekstual -->
+        <div class="card card-accent-blue" style="border: 2px solid var(--color-primary-border); padding: 1.5rem; background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+            <div>
+              <span class="badge badge-warning" style="margin-bottom: 0.35rem;">TAHAP SELANJUTNYA</span>
+              <h3 style="color: var(--color-primary-dark); font-size: 1.25rem; margin-bottom: 0.25rem;">
+                ✏️ Membuat Model dan Menyelesaikan Masalah Kontekstual
+              </h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-main); margin-bottom: 0; max-width: 620px;">
+                Materi pemodelan kontekstual lengkap (5 langkah pemecahan masalah soal cerita & simulasi belanja alat tulis) dipelajari dan dipraktikkan langsung pada menu <strong>2. Masalah Kontekstual</strong>.
+              </p>
             </div>
-            <div style="margin-top: 1rem; text-align: right;">
-              <a href="#/kontekstual" class="btn btn-sm btn-primary" style="font-weight: 700;">
-                ✏️ Coba Praktik Pemodelan di Menu Masalah Kontekstual →
-              </a>
-            </div>
-          </div>
-
-          <!-- Kesalahan yang Perlu Dihindari -->
-          <div style="margin-top: 1.5rem;">
-            <h4 style="color: #B91C1C; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
-              <span>⚠️</span> Kesalahan yang Sering Terjadi (Perlu Dihindari):
-            </h4>
-            <ul style="padding-left: 1.25rem; font-size: 0.9rem; color: var(--color-text-main); line-height: 1.6;">
-              <li>Tidak menjelaskan arti variabel x dan y, sehingga jawaban akhir sulit dipahami konteksnya.</li>
-              <li>Hanya memeriksa hasil akhir ke salah satu persamaan saja, bukan ke kedua persamaan.</li>
-              <li>Lupa mengalikan semua suku saat menyamakan koefisien pada metode eliminasi.</li>
-              <li>Keliru mengartikan pasangan berurutan: pasangan (x, y) berbeda dengan (y, x).</li>
-            </ul>
+            <a href="#/kontekstual" class="btn btn-primary btn-lg" style="font-weight: 700; white-space: nowrap;">
+              Buka Masalah Kontekstual →
+            </a>
           </div>
         </div>
 
-        <!-- BAGIAN 5: Ringkasan Inti Konsep -->
+        <!-- BAGIAN 4: Ringkasan Inti Konsep -->
         <div class="card">
           <div class="card-header">
             <h2 class="card-title">
-              <span>📋</span> 5. Ringkasan Inti Materi
+              <span>📋</span> 4. Ringkasan Inti Materi
             </h2>
           </div>
           <div class="table-responsive">
@@ -632,13 +593,13 @@ export function renderMateriView(container) {
           </div>
         </div>
 
-        <!-- BAGIAN 6: Latihan Pemahaman Interaktif (3 Soal dari Bahan Ajar) -->
+        <!-- BAGIAN 5: Latihan Pemahaman Interaktif (3 Soal dari Bahan Ajar) -->
         <div class="card" style="border: 2px solid var(--color-primary-border); background: white;">
           <div class="card-header">
             <div>
               <span class="badge badge-success" style="margin-bottom: 0.35rem;">UJI PEMAHAMAN</span>
               <h2 class="card-title">
-                <span>✍️</span> 6. Latihan Pemahaman Mandiri
+                <span>✍️</span> 5. Latihan Pemahaman Mandiri
               </h2>
             </div>
             <span style="font-size: 0.85rem; color: var(--color-text-muted);">Kerjakan 3 soal di bawah ini</span>
