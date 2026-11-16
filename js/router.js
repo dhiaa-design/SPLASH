@@ -36,8 +36,6 @@ const routes = {
   '#/materi': { view: renderMateriView, authRequired: true, studentOnly: false, title: 'Materi SPLDV' },
   '#/kontekstual': { view: renderKontekstualView, authRequired: true, studentOnly: false, title: 'Masalah Kontekstual' },
   '#/simulasi': { view: renderSimulasiView, authRequired: true, studentOnly: false, title: 'Simulasi Dua Timbangan' },
-  '#/eksplorasi': { view: renderEksplorasiView, authRequired: true, studentOnly: false, title: 'Eksplorasi Nilai Variabel' },
-  '#/eliminasi': { view: renderEliminasiView, authRequired: true, studentOnly: false, title: 'Laboratorium Eliminasi' },
   '#/tantangan': { view: renderTantanganView, authRequired: true, studentOnly: false, title: 'Tantangan Misi' },
   '#/lkpd': { view: renderLKPDView, authRequired: true, studentOnly: false, title: 'LKPD Digital & Refleksi' },
   '#/tentang': { view: renderTentangView, authRequired: false, studentOnly: false, title: 'Tentang SPLASH' },
@@ -70,6 +68,12 @@ export class Router {
     if (!window.location.hash || window.location.hash === '#' || window.location.hash === '#/') {
       hash = user ? (user.role === 'guru' ? '#/guru/dashboard' : '#/beranda') : '#/login';
       window.location.hash = hash;
+      return;
+    }
+
+    // Redirect rute yang dihapus ke simulasi
+    if (hash === '#/eksplorasi' || hash === '#/eliminasi') {
+      window.location.hash = '#/simulasi';
       return;
     }
 

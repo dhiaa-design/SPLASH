@@ -494,14 +494,15 @@ export function getTeacherAnalytics(classCode) {
 
   const totalStudents = students.length;
   let totalStagePercentage = 0;
-  const stagesCount = 8; // Beranda, Materi, Kontekstual, Simulasi, Eksplorasi, Eliminasi, Tantangan, LKPD
+  const stagesCount = 5; // Materi, Kontekstual, Simulasi, Tantangan, LKPD
+  const validStages = ['materi', 'kontekstual', 'simulasi', 'tantangan', 'lkpd'];
 
   const missionFailureCount = {};
   missions.forEach(m => { missionFailureCount[m.id] = 0; });
 
   students.forEach(student => {
     const prog = progressMap[student.id];
-    const completedCount = prog?.completedStages?.length || 0;
+    const completedCount = (prog?.completedStages || []).filter(s => validStages.includes(s)).length;
     totalStagePercentage += Math.min(100, Math.round((completedCount / stagesCount) * 100));
   });
 

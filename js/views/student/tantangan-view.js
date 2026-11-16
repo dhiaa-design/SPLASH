@@ -31,7 +31,7 @@ export function renderTantanganView(container) {
         <!-- Header -->
         <div>
           <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-            <a href="#/eliminasi" style="font-weight: 600; font-size: 0.9rem;">← Lab Eliminasi</a>
+            <a href="#/simulasi" style="font-weight: 600; font-size: 0.9rem;">← Simulasi Timbangan</a>
             <span style="color: var(--color-text-light);">/</span>
             <span style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">Tantangan Misi</span>
           </div>
@@ -151,7 +151,7 @@ export function renderTantanganView(container) {
 
         <!-- Tombol Menuju LKPD Digital -->
         <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem;">
-          <a href="#/eliminasi" class="btn btn-outline">← Kembali ke Eliminasi</a>
+          <a href="#/simulasi" class="btn btn-outline">← Kembali ke Simulasi Timbangan</a>
           <a href="#/lkpd" class="btn btn-success btn-lg" id="btn-to-lkpd">
             Lanjut ke Pengisian LKPD Digital 📝 →
           </a>

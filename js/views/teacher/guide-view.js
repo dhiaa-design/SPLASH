@@ -46,14 +46,14 @@ export function renderTeacherGuideView(container) {
           <div style="background: #F8FAFC; border-left: 4px solid #00C9FF; padding: 1rem; border-radius: var(--radius-sm);">
             <strong>2. Eksplorasi Konkret dengan Timbangan (25 Menit):</strong>
             <p style="margin: 0.25rem 0 0 0; font-size: 0.92rem;">
-              Siswa membuka menu <em>Simulasi Dua Timbangan</em> dan <em>Eksplorasi Nilai</em> secara berpasangan. Amati bagaimana timbangan miring saat balok hanya ditambah pada satu sisi, serta temukan pasangan (3, 5) yang membuat kedua timbangan seimbang bersamaan.
+              Siswa membuka menu <em>Simulasi Dua Timbangan</em> secara berpasangan. Amati bagaimana timbangan miring saat balok hanya ditambah pada satu sisi, serta pahami prinsip kesetaraan aljabar kedua ruas.
             </p>
           </div>
 
-          <div style="background: #F8FAFC; border-left: 4px solid #E5484D; padding: 1rem; border-radius: var(--radius-sm);">
-            <strong>3. Abstraksi ke Metode Eliminasi (20 Menit):</strong>
+          <div style="background: #F8FAFC; border-left: 4px solid #F59E0B; padding: 1rem; border-radius: var(--radius-sm);">
+            <strong>3. Tantangan Misi Bertingkat (20 Menit):</strong>
             <p style="margin: 0.25rem 0 0 0; font-size: 0.92rem;">
-              Siswa membuka <em>Laboratorium Eliminasi</em> untuk memahami hubungan antara menghilangkan balok pada timbangan dengan mengurangkan suku sejenis pada persamaan aljabar tertulis.
+              Siswa membuka <em>Tantangan Misi</em> untuk memecahkan soal-soal SPLDV bertingkat dari mudah hingga menantang dengan bantuan petunjuk konsep.
             </p>
           </div>
 
@@ -82,19 +82,18 @@ export function renderTeacherGuideView(container) {
           </div>
 
           <div>
-            <strong style="color: var(--color-primary-dark);">Tahap 3 & 4: Simulasi Timbangan & Eksplorasi</strong>
+            <strong style="color: var(--color-primary-dark);">Tahap 3: Simulasi Dua Timbangan</strong>
             <ul style="padding-left: 1.25rem; font-size: 0.92rem; margin-top: 0.25rem;">
               <li>"Apa yang terjadi pada timbangan jika kita hanya menambahkan beban di cawan sebelah kiri?"</li>
               <li>"Bagaimana aturan aljabar agar sebuah timbangan yang sudah seimbang tetap berada dalam keadaan seimbang?"</li>
-              <li>"Ketika kalian mencoba nilai x=1 dan y=9, persamaan mana yang seimbang dan mana yang miring? Mengapa nilai tersebut belum sah disebut solusi SPLDV?"</li>
             </ul>
           </div>
 
           <div>
-            <strong style="color: var(--color-primary-dark);">Tahap 5: Laboratorium Eliminasi</strong>
+            <strong style="color: var(--color-primary-dark);">Tahap 4: Tantangan Misi Bertingkat</strong>
             <ul style="padding-left: 1.25rem; font-size: 0.92rem; margin-top: 0.25rem;">
-              <li>"Mengapa kita perlu mengalikan persamaan 1 dengan angka 2 sebelum melakukan pengurangan?"</li>
-              <li>"Apa keuntungan aljabar setelah variabel y tereliminasi (menjadi 0y)?"</li>
+              <li>"Bagaimana cara menentukan metode yang paling efisien untuk setiap misi (substitusi atau eliminasi)?"</li>
+              <li>"Periksa kembali apakah nilai x dan y memenuhi kedua persamaan secara bersamaan!"</li>
             </ul>
           </div>
         </div>

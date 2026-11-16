@@ -63,7 +63,7 @@ export function renderHomeView(container) {
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
           <h2 style="font-size: clamp(1.15rem, 3vw, 1.35rem);">Peta Petualangan Belajar SPLDV</h2>
           <span class="badge badge-info" style="font-size: 0.8rem;">
-            ${stages.length} dari 8 Tahap Terjelajahi
+            ${stages.filter(s => ['materi', 'kontekstual', 'simulasi', 'tantangan', 'lkpd'].includes(s)).length} dari 5 Tahap Terjelajahi
           </span>
         </div>
 
@@ -103,57 +103,35 @@ export function renderHomeView(container) {
             <span style="font-weight: 700; color: var(--color-primary); font-size: 0.82rem;">Coba Timbangan →</span>
           </a>
 
-          <!-- Tahap 4: Eksplorasi -->
-          <a href="#/eksplorasi" class="card card-hover" style="border-top: 4px solid #9C27B0; display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.8rem;">🎛️</span>
-              ${stages.includes('eksplorasi') ? '<span class="badge badge-success">✓ Selesai</span>' : '<span class="badge badge-info">Tahap 4</span>'}
-            </div>
-            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">4. Eksplorasi Nilai x & y</h3>
-            <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Geser slider untuk menemukan pasangan nilai yang memenuhi kedua persamaan sekaligus.</p>
-            <span style="font-weight: 700; color: #9C27B0; font-size: 0.82rem;">Mulai Eksplorasi →</span>
-          </a>
-
-          <!-- Tahap 5: Laboratorium Eliminasi -->
-          <a href="#/eliminasi" class="card card-hover" style="border-top: 4px solid #E5484D; display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.8rem;">🔬</span>
-              ${stages.includes('eliminasi') ? '<span class="badge badge-success">✓ Selesai</span>' : '<span class="badge badge-info">Tahap 5</span>'}
-            </div>
-            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">5. Lab Eliminasi</h3>
-            <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Pelajari langkah menyamakan koefisien dan melihat animasi suku aljabar saling menghapus secara sistematis.</p>
-            <span style="font-weight: 700; color: #E5484D; font-size: 0.82rem;">Masuk Laboratorium →</span>
-          </a>
-
-          <!-- Tahap 6: Tantangan / Misi -->
+          <!-- Tahap 4: Tantangan / Misi -->
           <a href="#/tantangan" class="card card-hover" style="border-top: 4px solid var(--color-accent-yellow); display: flex; flex-direction: column;">
             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
               <span style="font-size: 1.8rem;">⭐</span>
-              ${stages.includes('tantangan') ? '<span class="badge badge-success">✓ Selesai</span>' : '<span class="badge badge-warning">Tahap 6</span>'}
+              ${stages.includes('tantangan') ? '<span class="badge badge-success">✓ Selesai</span>' : '<span class="badge badge-warning">Tahap 4</span>'}
             </div>
-            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">6. Tantangan Misi</h3>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">4. Tantangan Misi</h3>
             <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Uji kemampuanmu memecahkan 5 misi bertingkat dari mudah hingga sulit dengan petunjuk konsep cerdas.</p>
             <span style="font-weight: 700; color: #854D0E; font-size: 0.82rem;">Mulai Misi →</span>
           </a>
 
-          <!-- Tahap 7: LKPD Digital -->
+          <!-- Tahap 5: LKPD Digital -->
           <a href="#/lkpd" class="card card-hover" style="border-top: 4px solid #2E9E6B; display: flex; flex-direction: column;">
             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
               <span style="font-size: 1.8rem;">📝</span>
-              ${stages.includes('lkpd') ? '<span class="badge badge-success">✓ Terkirim</span>' : '<span class="badge badge-info">Tahap 7</span>'}
+              ${stages.includes('lkpd') ? '<span class="badge badge-success">✓ Terkirim</span>' : '<span class="badge badge-info">Tahap 5</span>'}
             </div>
-            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">7. LKPD Digital</h3>
-            <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Isi lembar kerja siswa terintegrasi data eksplorasi, tulis refleksi, simpan draf, dan kirimkan ke gurumu.</p>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">5. LKPD Digital</h3>
+            <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Dokumentasikan refleksi belajarmu, simpan draf, dan kirimkan hasil pekerjaan ke gurumu.</p>
             <span style="font-weight: 700; color: #2E9E6B; font-size: 0.82rem;">Buka LKPD →</span>
           </a>
 
-          <!-- Tahap 8: Tentang -->
+          <!-- Tahap 6: Tentang -->
           <a href="#/tentang" class="card card-hover" style="border-top: 4px solid #718096; display: flex; flex-direction: column;">
             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
               <span style="font-size: 1.8rem;">💡</span>
               <span class="badge badge-info">Info</span>
             </div>
-            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">8. Tentang SPLASH</h3>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">6. Tentang SPLASH</h3>
             <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Informasi pengembang media, capaian pembelajaran fase D kurikulum merdeka, dan petunjuk penggunaan.</p>
             <span style="font-weight: 700; color: #718096; font-size: 0.82rem;">Pelajari Lebih Lanjut →</span>
           </a>

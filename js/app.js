@@ -56,28 +56,6 @@ class App {
           </ul>
         `
       },
-      '#/eksplorasi': {
-        title: 'Eksplorasi Nilai x dan y',
-        html: `
-          <p>Mencari solusi simultan SPLDV:</p>
-          <ul>
-            <li>Geser slider atau ketik angka untuk nilai x dan y.</li>
-            <li>Perhatikan apakah kedua persamaan terpenuhi bersamaan.</li>
-            <li>Klik tombol <em>"Catat ke Tabel Pengamatan"</em> untuk menyimpan hasil ujimu ke LKPD.</li>
-          </ul>
-        `
-      },
-      '#/eliminasi': {
-        title: 'Laboratorium Eliminasi',
-        html: `
-          <p>Metode aljabar sistematis:</p>
-          <ul>
-            <li>Pilih variabel target yang ingin dihilangkan (x atau y).</li>
-            <li>Tentukan pengali persamaan agar koefisien variabel target sama.</li>
-            <li>Amati animasi suku yang saling menghapus saat kedua persamaan dikurangkan.</li>
-          </ul>
-        `
-      },
       '#/tantangan': {
         title: 'Tantangan Misi Bertingkat',
         html: `
@@ -329,37 +307,23 @@ class App {
           </a>
         </li>
         <li>
-          <a href="#/eksplorasi" class="nav-item-link ${currentHash === '#/eksplorasi' ? 'active' : ''}">
-            <span class="nav-icon">🎛️</span>
-            <span>4. Eksplorasi x & y</span>
-            ${completed.includes('eksplorasi') ? '<span class="nav-badge-done">✓</span>' : ''}
-          </a>
-        </li>
-        <li>
-          <a href="#/eliminasi" class="nav-item-link ${currentHash === '#/eliminasi' ? 'active' : ''}">
-            <span class="nav-icon">🔬</span>
-            <span>5. Lab Eliminasi</span>
-            ${completed.includes('eliminasi') ? '<span class="nav-badge-done">✓</span>' : ''}
-          </a>
-        </li>
-        <li>
           <a href="#/tantangan" class="nav-item-link ${currentHash === '#/tantangan' ? 'active' : ''}">
             <span class="nav-icon">⭐</span>
-            <span>6. Tantangan Misi</span>
+            <span>4. Tantangan Misi</span>
             ${completed.includes('tantangan') ? '<span class="nav-badge-done">✓</span>' : ''}
           </a>
         </li>
         <li>
           <a href="#/lkpd" class="nav-item-link ${currentHash === '#/lkpd' ? 'active' : ''}">
             <span class="nav-icon">📝</span>
-            <span>7. LKPD & Refleksi</span>
+            <span>5. LKPD & Refleksi</span>
             ${completed.includes('lkpd') ? '<span class="nav-badge-done">✓</span>' : ''}
           </a>
         </li>
         <li>
           <a href="#/tentang" class="nav-item-link ${currentHash === '#/tentang' ? 'active' : ''}">
             <span class="nav-icon">💡</span>
-            <span>8. Tentang SPLASH</span>
+            <span>6. Tentang SPLASH</span>
           </a>
         </li>
       `;
@@ -390,8 +354,9 @@ class App {
 
     cardEl.style.display = 'block';
     const prog = getProgress(user.id);
-    const completedStages = prog.completedStages || [];
-    const totalStages = 8;
+    const validStages = ['materi', 'kontekstual', 'simulasi', 'tantangan', 'lkpd'];
+    const completedStages = (prog.completedStages || []).filter(s => validStages.includes(s));
+    const totalStages = validStages.length;
     const percent = Math.min(100, Math.round((completedStages.length / totalStages) * 100));
 
     fillEl.style.width = `${percent}%`;
