@@ -50,17 +50,17 @@ export function renderTeacherGuideView(container) {
             </p>
           </div>
 
-          <div style="background: #F8FAFC; border-left: 4px solid #F59E0B; padding: 1rem; border-radius: var(--radius-sm);">
-            <strong>3. Tantangan Misi Bertingkat (20 Menit):</strong>
+          <div style="background: #F8FAFC; border-left: 4px solid #2E9E6B; padding: 1rem; border-radius: var(--radius-sm);">
+            <strong>3. Refleksi & Pengisian LKPD Digital (20 Menit):</strong>
             <p style="margin: 0.25rem 0 0 0; font-size: 0.92rem;">
-              Siswa membuka <em>Tantangan Misi</em> untuk memecahkan soal-soal SPLDV bertingkat dari mudah hingga menantang dengan bantuan petunjuk konsep.
+              Siswa melengkapi refleksi pemahaman di menu <em>LKPD Digital</em> dan mengirimkannya. Guru dapat meninjau kiriman siswa secara berkala.
             </p>
           </div>
 
-          <div style="background: #F8FAFC; border-left: 4px solid #2E9E6B; padding: 1rem; border-radius: var(--radius-sm);">
-            <strong>4. Refleksi, Pengisian LKPD, & Penilaian (20 Menit):</strong>
+          <div style="background: #F8FAFC; border-left: 4px solid #F59E0B; padding: 1rem; border-radius: var(--radius-sm);">
+            <strong>4. Tantangan Misi Bertingkat (20 Menit):</strong>
             <p style="margin: 0.25rem 0 0 0; font-size: 0.92rem;">
-              Siswa melengkapi refleksi di menu <em>LKPD Digital</em> dan mengirimkannya. Guru membuka dashboard untuk meninjau LKPD dan memberikan penilaian.
+              Siswa membuka <em>Tantangan Misi</em> sebagai puncak evaluasi untuk memecahkan soal-soal SPLDV bertingkat dari mudah hingga menantang.
             </p>
           </div>
         </div>

@@ -307,17 +307,17 @@ class App {
           </a>
         </li>
         <li>
-          <a href="#/tantangan" class="nav-item-link ${currentHash === '#/tantangan' ? 'active' : ''}">
-            <span class="nav-icon">⭐</span>
-            <span>4. Tantangan Misi</span>
-            ${completed.includes('tantangan') ? '<span class="nav-badge-done">✓</span>' : ''}
+          <a href="#/lkpd" class="nav-item-link ${currentHash === '#/lkpd' ? 'active' : ''}">
+            <span class="nav-icon">📝</span>
+            <span>4. LKPD & Refleksi</span>
+            ${completed.includes('lkpd') ? '<span class="nav-badge-done">✓</span>' : ''}
           </a>
         </li>
         <li>
-          <a href="#/lkpd" class="nav-item-link ${currentHash === '#/lkpd' ? 'active' : ''}">
-            <span class="nav-icon">📝</span>
-            <span>5. LKPD & Refleksi</span>
-            ${completed.includes('lkpd') ? '<span class="nav-badge-done">✓</span>' : ''}
+          <a href="#/tantangan" class="nav-item-link ${currentHash === '#/tantangan' ? 'active' : ''}">
+            <span class="nav-icon">⭐</span>
+            <span>5. Tantangan Misi</span>
+            ${completed.includes('tantangan') ? '<span class="nav-badge-done">✓</span>' : ''}
           </a>
         </li>
         <li>

@@ -29,9 +29,9 @@ export function renderLKPDView(container) {
         <!-- Header Non-Print -->
         <div class="btn-print-hide">
           <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-            <a href="#/tantangan" style="font-weight: 600; font-size: 0.9rem;">← Tantangan Misi</a>
+            <a href="#/simulasi" style="font-weight: 600; font-size: 0.9rem;">← Simulasi Timbangan</a>
             <span style="color: var(--color-text-light);">/</span>
-            <span style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">LKPD Digital & Refleksi</span>
+            <span style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">4. LKPD Digital & Refleksi</span>
           </div>
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
             <div>
@@ -220,6 +220,14 @@ export function renderLKPDView(container) {
 
           </form>
 
+        </div>
+
+        <!-- Tombol Menuju Tahap 5: Tantangan Misi -->
+        <div class="btn-print-hide" style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.5rem;">
+          <a href="#/simulasi" class="btn btn-outline">← Kembali ke Simulasi Timbangan</a>
+          <a href="#/tantangan" class="btn btn-warning btn-lg" style="font-weight: 700;">
+            Lanjut ke 5. Tantangan Misi ⭐ →
+          </a>
         </div>
 
       </div>

@@ -103,26 +103,26 @@ export function renderHomeView(container) {
             <span style="font-weight: 700; color: var(--color-primary); font-size: 0.82rem;">Coba Timbangan →</span>
           </a>
 
-          <!-- Tahap 4: Tantangan / Misi -->
-          <a href="#/tantangan" class="card card-hover" style="border-top: 4px solid var(--color-accent-yellow); display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.8rem;">⭐</span>
-              ${stages.includes('tantangan') ? '<span class="badge badge-success">✓ Selesai</span>' : '<span class="badge badge-warning">Tahap 4</span>'}
-            </div>
-            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">4. Tantangan Misi</h3>
-            <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Uji kemampuanmu memecahkan 5 misi bertingkat dari mudah hingga sulit dengan petunjuk konsep cerdas.</p>
-            <span style="font-weight: 700; color: #854D0E; font-size: 0.82rem;">Mulai Misi →</span>
-          </a>
-
-          <!-- Tahap 5: LKPD Digital -->
+          <!-- Tahap 4: LKPD Digital -->
           <a href="#/lkpd" class="card card-hover" style="border-top: 4px solid #2E9E6B; display: flex; flex-direction: column;">
             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
               <span style="font-size: 1.8rem;">📝</span>
-              ${stages.includes('lkpd') ? '<span class="badge badge-success">✓ Terkirim</span>' : '<span class="badge badge-info">Tahap 5</span>'}
+              ${stages.includes('lkpd') ? '<span class="badge badge-success">✓ Terkirim</span>' : '<span class="badge badge-info">Tahap 4</span>'}
             </div>
-            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">5. LKPD Digital</h3>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">4. LKPD Digital</h3>
             <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Dokumentasikan refleksi belajarmu, simpan draf, dan kirimkan hasil pekerjaan ke gurumu.</p>
             <span style="font-weight: 700; color: #2E9E6B; font-size: 0.82rem;">Buka LKPD →</span>
+          </a>
+
+          <!-- Tahap 5: Tantangan / Misi -->
+          <a href="#/tantangan" class="card card-hover" style="border-top: 4px solid var(--color-accent-yellow); display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.8rem;">⭐</span>
+              ${stages.includes('tantangan') ? '<span class="badge badge-success">✓ Selesai</span>' : '<span class="badge badge-warning">Tahap 5</span>'}
+            </div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">5. Tantangan Misi</h3>
+            <p style="font-size: 0.85rem; flex-grow: 1; margin-bottom: 0.5rem;">Uji kemampuanmu memecahkan 5 misi bertingkat dari mudah hingga sulit dengan petunjuk konsep cerdas.</p>
+            <span style="font-weight: 700; color: #854D0E; font-size: 0.82rem;">Mulai Misi →</span>
           </a>
 
           <!-- Tahap 6: Tentang -->

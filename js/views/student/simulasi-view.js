@@ -112,11 +112,11 @@ export function renderSimulasiView(container) {
                 💡 Apa yang Kamu Temukan?
               </h3>
               <p style="font-size: 0.92rem; margin-bottom: 0;">
-                Operasi pada satu timbangan tidak otomatis mengubah timbangan lain, namun <strong>nilai tersembunyi x dan y konsisten sama</strong> pada kedua timbangan. Sekarang mari kita uji kemampuan aljabarmu pada Tantangan Misi bertingkat!
+                Operasi pada satu timbangan tidak otomatis mengubah timbangan lain, namun <strong>nilai tersembunyi x dan y konsisten sama</strong> pada kedua timbangan. Sekarang mari kita dokumentasikan pemahamanmu di LKPD Digital!
               </p>
             </div>
-            <a href="#/tantangan" class="btn btn-primary btn-lg" id="btn-to-exploration">
-              Lanjut ke Tantangan Misi ⭐ →
+            <a href="#/lkpd" class="btn btn-primary btn-lg" id="btn-to-exploration">
+              Lanjut ke LKPD Digital 📝 →
             </a>
           </div>
         </div>

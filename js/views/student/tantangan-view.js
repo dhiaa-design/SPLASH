@@ -31,9 +31,9 @@ export function renderTantanganView(container) {
         <!-- Header -->
         <div>
           <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-            <a href="#/simulasi" style="font-weight: 600; font-size: 0.9rem;">← Simulasi Timbangan</a>
+            <a href="#/lkpd" style="font-weight: 600; font-size: 0.9rem;">← LKPD Digital</a>
             <span style="color: var(--color-text-light);">/</span>
-            <span style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">Tantangan Misi</span>
+            <span style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">5. Tantangan Misi</span>
           </div>
           <h1 style="font-size: 2rem;">Tantangan Misi Matematika SPLDV</h1>
           <p style="font-size: 1.05rem; margin-top: 0.5rem;">
@@ -149,11 +149,11 @@ export function renderTantanganView(container) {
 
         </div>
 
-        <!-- Tombol Menuju LKPD Digital -->
+        <!-- Tombol Navigasi Bawah -->
         <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem;">
-          <a href="#/simulasi" class="btn btn-outline">← Kembali ke Simulasi Timbangan</a>
-          <a href="#/lkpd" class="btn btn-success btn-lg" id="btn-to-lkpd">
-            Lanjut ke Pengisian LKPD Digital 📝 →
+          <a href="#/lkpd" class="btn btn-outline">← Kembali ke LKPD Digital</a>
+          <a href="#/tentang" class="btn btn-primary btn-lg" id="btn-to-tentang">
+            Lihat Tentang SPLASH 💡 →
           </a>
         </div>
 
